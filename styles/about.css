@@ -1,0 +1,59 @@
+/*  1. FONT */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Selector ID: gambar latar dari assets/images (alamat dihitung dari file CSS) */
+#about {
+  background-image: url("/assets/images/minecraft\ images\ background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 56px 20px;
+}
+
+/* Selector class: kotak 620px, di tengah, latar rgba, sudut membulat */
+.about-box {
+  width: 620px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 24px 30px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+
+/* Selector descendant: judul dengan Poppins, rata tengah, warna gelap */
+.about-box h2 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #1e2a47;
+  margin: 0 0 16px 0;
+}
+
+/* Selector descendant: paragraf 16px, rata kiri, dan jarak antar baris (line-height) */
+.about-box p {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.7;
+  color: #333333;
+  margin: 0 0 12px 0;
+}
+
+/* Selector descendant: kalimat penutup rata kanan dan miring.
+   Memakai .about-box .closing agar lebih spesifik daripada .about-box p */
+.about-box .closing {
+  text-align: right;
+  font-style: italic;
+  font-weight: 600;
+  color: #e8953f;
+  margin-bottom: 0;
+}
+
+/* Tautan footer di tengah */
+footer {
+  text-align: center;
+  padding: 16px 0;
+}
