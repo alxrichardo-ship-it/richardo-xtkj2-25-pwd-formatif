@@ -1,18 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Tombol CSS</title>
+  <style>
+    /* Selector tag */
+    body {
+      margin: 0;
+      padding: 40px;
+      background-color: #f5f6fa;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Selector descendant: body > main > h2 */
+    body main h2 {
+      margin: 0 0 12px 0;
+      font-size: 15px;
+      color: #1e2a47;
+    }
+
+    /* Selector class */
+    .button-group {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    /* Selector class (dasar semua tombol) */
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      border: 2px solid transparent;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    }
+
+    .btn-primary {
+      background-color: #1e3a66;
+      color: #ffffff;
+    }
+
+    .btn-secondary {
+      background-color: #dde4f0;
+      color: #1e3a66;
+    }
+
+    .btn-outline {
+      background-color: #ffffff;
+      color: #1e2a47;
+      border-color: #1e3a66;
+    }
+
+    .btn-send {
+      background-color: #e8953f;
+      color: #ffffff;
+    }
+
+    /* Selector pseudo-class :hover */
+    .btn-primary:hover {
+      background-color: #14264a;
+    }
+
+    .btn-secondary:hover {
+      background-color: #bfcce3;
+    }
+
+    .btn-outline:hover {
+      background-color: #e6ebf5;
+    }
+
+    .btn-send:hover {
+      background-color: #c97f33;
+    }
+
+    /* Selector descendant: footer a */
+    footer a {
+      font-size: 11px;
+      color: #5b2a86;
+      text-decoration: underline;
+    }
+
+    /* Selector grouping */
+    footer a:hover,
+    footer a:focus {
+      color: #3b1a5a;
+    }
+  </style>
 </head>
 <body>
-    <main>
-        <h2>Button Set</h2>
+  <main>
+    <h2>Button</h2>
+    <div class="button-group">
+      <a href="#" class="btn btn-primary">Lihat Proyek</a>
+      <a href="#" class="btn btn-secondary">Unduh CV</a>
+      <a href="#" class="btn btn-outline">Hubungi Saya</a>
+      <a href="#" class="btn btn-send">Kirim Pesan</a>
+    </div>
+  </main>
 
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-    </main>
+  <footer>
+    <a href="#">Kembali ke Beranda</a>
+  </footer>
 </body>
 </html>
