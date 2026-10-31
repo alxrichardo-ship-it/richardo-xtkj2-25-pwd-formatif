@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kartu dengan Label dan Tombol Ke Atas - Hobi Bermain Game</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: #f1f0fa;
+      font-family: "Poppins", Arial, sans-serif;
+      color: #333333;
+    }
+
+    /* ID Top */
+    #top {
+      padding: 18px;
+      background-color: #1e1b3a;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    #top h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    /* Posisi Card */
+    .card {
+      position: relative;
+      width: 360px;
+      margin: 30px auto;
+      border: 1px solid #d5d2ee;
+      border-radius: 10px;
+      background-color: #ffffff;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      display: block;
+    }
+
+    .card h3 {
+      margin: 16px 16px 8px;
+      color: #3b2f8f;
+    }
+
+    .card p {
+      margin: 0 16px 16px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* Posisi card-badge */
+    .card .badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background-color: #e8590c;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    /* Paragraf */
+    main p {
+      width: 360px;
+      margin: 0 auto 14px;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    .jump-down {
+      display: block;
+      width: 360px;
+      margin: 0 auto 20px;
+      color: #3b2f8f;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Ke atas */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+      padding: 10px 14px;
+      border-radius: 6px;
+      background-color: #3b2f8f;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* Style pas Dipencet */
+    .back-to-top:hover {
+      background-color: #e8590c;
+    }
+  </style>
+</head>
+<body>
+  <header id="top">
+    <h1>Proyek Saya</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <img
+        src="/assets/images/roblox.jpg"
+        alt="Ilustrasi controller game">
+      <span class="badge">BARU</span>
+      <h3>Koleksi Game Favorit</h3>
+      <p>Proyek terbaru saya: halaman daftar game yang sering saya mainkan. Isinya game favorite, device, dan jam bermain.</p>
+    </div>
+
+
+    <a class="jump-down" href="#bawah">&darr; Ke Bawah</a>
+
+    <p>Roblox merupakan game yang terkenal di seluruh dunia. Roblox sangat terkenal dikarenakan terdapat banyak sekali game - game yang dimulai dari game berkebun hingga game perang.</p>
+    <p>Alasan saya memilih game ini, karena game ini menjadi satu-satunya game yang saya mainkan pada saat saya sendiri.Salah satu gamenya yaitu, Tower Defense Simulator (TDS) yang bisa dimainkan sebanyak 4 player.</p>
+    <p>Digame tersebut, kita diharuskan menyusun strategi dalam mempertahankan wilayah kita dari zombie. Adapun game lain seperti AOT Revolution yang mengarahkan pemain untuk membunuh titan dan masih banyak lagi.</p>
+    <p>Game ini sangat cocok untuk dimainkan bersama teman-teman. Kita bisa tertawa bersama, tegang bersama, saling jahil, dan lain-lain. Pengalaman yang paling sering didapat ialah tertawa bersama karena hampir setiap game pasti ada momen lucu.</p>
+    <p>Device yang saya gunakan untuk memainkan game roblox adalah laptop. Mengapa laptop bukan hp? Karena HP saya yang kurang bagus atau kasarnya "Kentang". Ssetelah saya berada di kelas 10, saya membeli laptop dan saya bisa bermain roblox dengan pengalaman yang lebih baik.</p>
+    <p>Biasanya, saya bermain roblox selama 2 - 4 jam. Saya memainkan game ini pada saat malam hari setelah tugas saya sudah saya kerjakan dan saya tidak tau harus ngapain.</p>
+    <p>Kesimpulannya, Roblox ini menjadi salah satu game favorit saya dan sangat cocok dimainkan pada saat memiliki waktu luang bersama teman.</p>
+  </main>
+
+  <footer id="bawah">
+    <a href="index.html">Kembali ke Beranda</a>
+  </footer>
+
+  <a class="back-to-top" href="#top">&uarr; Ke Atas</a>
+</body>
+</html>
