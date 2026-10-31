@@ -1,0 +1,75 @@
+/* body */
+body {
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  background-color: #f5f6fa;
+  color: #333;
+}
+
+/* ID main-header */
+#main-header {
+  background-color: #263859;
+}
+
+/* Bagian atas */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+/* Tulisan terang */
+.logo {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Isi */
+.nav-menu {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu > li {
+  list-style: none;
+}
+
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-menu a:hover {
+  color: #ffc857;
+}
+
+/* Isi part2 */
+main {
+  padding: 40px 30px 20px;
+}
+
+main h1 {
+  font-size: 22px;
+  margin: 0 0 12px;
+}
+
+main p {
+  font-size: 13px;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 13px;
+}
+
+footer a {
+  color: #5b3f9e;
+}
