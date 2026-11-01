@@ -1,0 +1,97 @@
+/* ---------- Dasar halaman ---------- */
+body {
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  background-color: #f6f7fb;
+  color: #2e3a59;
+}
+
+/* ---------- Syarat 2: header (Tag) ---------- */
+header {
+  background-color: #243858;
+  color: #ffffff;
+  text-align: center;
+  padding: 36px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Isi utama ---------- */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px 20px;
+}
+
+section {
+  margin-bottom: 36px;
+}
+
+/* ---------- Syarat 3: Grouping + ID + Descendant ---------- */
+#components h2,
+#pages h2 {
+  color: #243858;
+  font-size: 22px;
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #dde4f0;
+}
+
+/* ---------- Daftar tautan: berderet menyamping, bukan ke bawah ---------- */
+section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+section li {
+  background-color: #ffffff;
+  border: 1px solid #dde4f0;
+  border-radius: 999px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+section li:hover {
+  background-color: #fff4e8;
+  border-color: #e8923f;
+}
+
+/* ---------- Syarat 4: main a (Descendant) ---------- */
+main a {
+  display: block;
+  padding: 10px 20px;
+  color: #c0610d;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 3px solid #4a6fd8;
+  outline-offset: 2px;
+}
+
+/* ---------- Syarat 5: footer (Tag) ---------- */
+footer {
+  background-color: #dde4f0;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 12px;
+  color: #3b475f;
+}
