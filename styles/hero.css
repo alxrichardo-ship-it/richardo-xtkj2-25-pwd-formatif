@@ -1,0 +1,116 @@
+/* ---------- Dasar halaman ---------- */
+body {
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* ---------- Syarat 2: #hero (ID) ---------- */
+#hero {
+  height: 400px;
+  text-align: center;
+  background-color: #8a6a45;           
+  background-image: url("/assets/images/robloxbg.jpg");
+  background-size: cover;             
+  background-position: center;        
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Syarat 3: .hero-content (Class) ---------- */
+.hero-content {
+  width: 640px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 32px;
+  background-color: rgba(40, 40, 50, 0.7);
+  border-radius: 10px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.hero-content h1 {
+  margin: 0 0 12px;
+  font-size: 36px;
+}
+
+.hero-content p {
+  margin: 0 0 20px;
+  font-size: 14px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #e8923f;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+/* ---------- Syarat 4 & 7: Grouping + Descendant ---------- */
+.hero-content h1,
+.hero-content p {
+  animation-name: slide-up;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards; /* tidak berkedip sebelum animasi mulai */
+}
+
+/* ---------- Syarat 5: ditulis SETELAH aturan grouping ---------- */
+.hero-content p {
+  animation-delay: 0.6s;
+}
+
+/* ---------- Syarat 6: @keyframes slide-up (5 tahap) ---------- */
+@keyframes slide-up {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(40px);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(20px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateY(8px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ---------- Tantangan (opsional): fade-in tanpa bergerak ---------- */
+.hero-content .btn {
+  animation: fade-in 1.2s ease-out 0.9s 1 normal backwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  margin-top: 16px;
+}
+
+footer a {
+  color: #6b3fa0;
+  font-size: 12px;
+}
+
